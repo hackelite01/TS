@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Typing Speed Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Login to Typing Speed Game</h1>
+    </header>
+    <main>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Typing Speed Game</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

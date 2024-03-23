@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Level - Typing Speed Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="easy-level.html">Easy Level</a></li>
+            <li><a href="medium-level.html">Medium Level</a></li>
+            <li><a href="hard-level.html">Hard Level</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Hard Level</h1>
+    </header>
+    <main>
+        <div id="game-container">
+            <p id="word-display">Type the word here</p>
+            <input type="text" id="user-input" autofocus>
+            <p id="score-display">Score: <span id="score">0</span></p>
+            <p id="timer-display">Time: <span id="timer">60</span> seconds</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Typing Speed Game</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js"></script>
+    <script src="js/hard-game.js"></script>
+</body>
+
+</html>
