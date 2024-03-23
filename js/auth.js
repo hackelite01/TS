@@ -1,4 +1,6 @@
-// Initialize Firebase (replace with your actual Firebase configuration)
+<script src = "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js" > </script>  
+<script src = "https:/ / www.gstatic.com / firebasejs / 9.6 .5 / firebase - auth.js " > </script>
+    // Initialize Firebase (replace with your actual Firebase configuration)
 const firebaseConfig = {
     apiKey: "YOUR_API_KEY",
     authDomain: "YOUR_AUTH_DOMAIN",
