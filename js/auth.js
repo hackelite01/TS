@@ -20,7 +20,8 @@ if (signupForm) {
 
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
-                // Signup successful, do something if needed
+                // Signup successful, redirect to select level page
+                window.location.href = 'select-level.html';
             })
             .catch((error) => {
                 // Handle signup errors
@@ -39,7 +40,8 @@ if (loginForm) {
 
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
-                // Login successful, do something if needed
+                // Login successful, redirect to select level page
+                window.location.href = 'select-level.html';
             })
             .catch((error) => {
                 // Handle login errors
@@ -54,7 +56,8 @@ if (logoutButton) {
     logoutButton.addEventListener('click', () => {
         firebase.auth().signOut()
             .then(() => {
-                // Logout successful, do something if needed
+                // Logout successful, redirect to login page or home page
+                window.location.href = 'index.html';
             })
             .catch((error) => {
                 // Handle logout errors
@@ -68,8 +71,12 @@ firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         // User is logged in
         // Update UI accordingly, e.g., show profile information
+
+        // Redirect to select level page if user is authenticated
+        window.location.href = 'select-level.html';
     } else {
         // User is not logged in
         // Redirect to login page or handle authentication state
+        window.location.href = 'login.html'; // Redirect to login page
     }
 });

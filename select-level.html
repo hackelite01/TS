@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Level</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="select-level.html">Select Level</a></li>
+        </ul>
+    </nav>
+
+    <div class="level-selection">
+        <h2>Select a Level</h2>
+        <button onclick="selectLevel('easy')">Easy</button>
+        <button onclick="selectLevel('medium')">Medium</button>
+        <button onclick="selectLevel('hard')">Hard</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Typing Speed Game</p>
+    </footer>
+
+    <script>
+        function selectLevel(level) {
+            // Redirect to the selected level page
+            window.location.href = level + '-level.html';
+        }
+    </script>
+</body>
+
+</html>
